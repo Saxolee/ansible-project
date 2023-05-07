@@ -14,8 +14,8 @@
 
     - name: install apache server
       ansible.builtin.apt:
-        name: httpd
-        state: latest
+        name: apache
+        state: present
 
     - name: change directory to the html directory
       shell: cd /var/www/html
