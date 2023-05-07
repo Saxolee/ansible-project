@@ -7,13 +7,13 @@
 
   tasks:
     - name: update ec2 instance
-      apt:
+      ansible.builtin.apt:
         name: '*'
         state: latest
         update_cache: yes
 
     - name: install apache server
-      apt:
+      ansible.builtin.apt:
         name: httpd
         state: latest
 
